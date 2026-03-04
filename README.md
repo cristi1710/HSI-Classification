@@ -1,6 +1,6 @@
 # HSI Classification — Kaggle Competition
 
-** Score: 0.8417 macro F1 **
+# Score: 0.8417 macro F1
 
 ## Overview
 
