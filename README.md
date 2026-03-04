@@ -1,6 +1,6 @@
-# HSI Classification (DL – Remote Sensing)
+# HSI Classification
 
-**7th place solution** for the [HSI Classification Kaggle Competition](https://www.kaggle.com/competitions/hsi-classification) — Macro F1: **0.8417**
+Macro F1: **0.8417**
 
 This project classifies hyperspectral image patches using a custom hybrid 1D/2D/3D CNN. Each sample is a 19×19×48 patch (48 spectral bands, 380–2500nm, ~1m/px). The model assigns a land cover class (1–7) based on the spectral and spatial signature of the central pixel.
 
@@ -77,7 +77,6 @@ The script expects data at `/kaggle/input/hsi-classification/` (configurable via
 | Metric | Value |
 |---|---|
 | Leaderboard score (macro F1) | 0.8417 |
-| Final rank | 7th place |
 | Validation F1 (avg across folds) | ~0.54 |
 
 The gap between validation F1 (~0.54) and leaderboard F1 (0.84) is explained by the calibration step: classes 4 and 5 are absent from training, which suppresses macro F1 at validation time. The iterative prior calibration recovers the correct distribution on the test set.
