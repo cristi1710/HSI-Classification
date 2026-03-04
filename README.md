@@ -1,6 +1,6 @@
 # HSI Classification — Kaggle Competition
 
-**Leaderboard: 7th place out of all participants | Score: 0.8417 macro F1**
+** Score: 0.8417 macro F1**
 
 ## Overview
 
